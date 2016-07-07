@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@-webkit-keyframes blink {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #333;
+  }
+}
+.blink {
+  -webkit-animation: blink 0.8s linear infinite;
+}
+body {
+  background: url('../img/13342970_979749532122974_8549422880313011406_n.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div#home > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border: solid blue 2px;
+  padding: 10px;
+  width: 90%;
+}
+div#home > div span {
+  font-style: italic;
+  display: block;
+}
+div#home > div img {
+  border: 1px solid #00428e;
+  height: 100px;
+  width: 100px;
+  display: inline;
+  border-radius: 100px;
+  overflow: hidden;
+}
+div#home > div ol li {
+  color: #660000;
+}
+div#home > div ol li:nth-child(1) > span {
+  font-weight: 600;
+  font-family: Pacifico;
+}

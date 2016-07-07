@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+@important: red;
+
+.background(@url){
+
+    background: url(@url) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+
+@-webkit-keyframes blink {
+    0% { color: white; }
+    100% { color: #333; }
+}
+.blink {
+    -webkit-animation: blink 0.8s linear infinite;
+
+}
+
+.circleImage(@size: 100) {
+    border: 1px solid #00428e;
+    height: 100px;
+    width: 100px;
+    display: inline;
+    border-radius: unit(@size,px);
+    overflow: hidden;
+
+
+}
+
+
+body {
+    .background('../img/13342970_979749532122974_8549422880313011406_n.jpg');
+
+}
+
+div#home{
+   
+
+    >div {
+        background-color: rgba(255,255,255, 0.8);
+        margin-left: auto;
+        margin-right: auto;
+        border: solid blue 2px;
+        padding: 10px;
+        width: 90%;
+
+
+
+        span {font-style: italic; display: block;}
+
+        img {.circleImage();}
+
+        ol{
+
+            li{
+                color: darken(@important, 30);
+                &:nth-child(1){
+                    >span{
+                    font-weight: 600;
+                    font-family: Pacifico;
+                    }
+                }  
+            }  
+
+        }
+
+    }
+
+
+}

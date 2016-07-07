@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div id='home'>
+
+            <h1>Titulo</h1>
+            <div id='info'>
+                <div><span >TODO</span> write content</div> <!---->
+                <img src='http://4everstatic.com/imagenes/674xX/animales/salvajes/zebras,-arco-iris-166775.jpg'/>
+                <p>Los odónimos de Barcelona —es decir, los nombres de calles y vías públicas de la ciudad— están regulados por la Ponencia de Nomenclátor de las Calles de Barcelona, una comisión dependiente de la concejalía de Cultura del Ayuntamiento de Barcelona. Estos nombres han cambiado con el tiempo, y han sido el reflejo de los diversos acontecimientos tanto históricos como sociales, políticos, económicos y culturales acaecidos en la ciudad. Su evolución ha estado marcada igualmente por diversos factores, como el urbanismo y los cambios físicos y territoriales ocurridos en la fisonomía de la ciudad, derivados principalmente de su expansión geográfica a lo largo del llano de Barcelona, con dos hitos principales: el Plan de Ensanche elaborado por Ildefonso Cerdá y la agregación de municipios limítrofes, entre los siglos xix y xx.
+
+                    Los nombres de calles más antiguos existentes aún en Barcelona son de origen medieval. Sin embargo, su regulación no se inició hasta el siglo </p>
+                <ol>
+                    <li><span>Primero</span></li>
+                    <li>Segiundo</li>
+                </ol>
+
+                <button class='btn btn-primary' type="button">Action</button>
+            </div>
+        </div>
+
+        <script>
+
+$('div#home p').click(function(){ 
+    $(this).addClass('blink');
+    var that= this;
+    setTimeout(
+          function(){
+                $(that).removeClass('blink');
+              
+          }  , 2000
+                );
+    
+    
+    });
+
+        </script>
+    </body>
+</html>
