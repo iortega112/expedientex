@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+@a2: darken(@a3,20%);
+@a3: lightblue;
+
+
+@b1:spin(@a2, -55); //armónico 1
+
+@c1:spin(@a2, 125); //armónico 2
+
+
 @important: red;
 
 .background(@url){
@@ -40,18 +49,39 @@ body {
 
 }
 
+nav {background-color: @c1!important;}
+
+
 div#home{
+        h1 {
+           
+            padding-left:0px;
+            color: @a3;
+                margin-top:70px; /* TODO poner al nav*/
+            
+        }
    
 
-    >div {
+    >div#info {
         background-color: rgba(255,255,255, 0.8);
         margin-left: auto;
         margin-right: auto;
         border: solid blue 2px;
         padding: 10px;
-        width: 90%;
+        
+        
+        
+    
+        
+       // width: 90%;
 
-
+/*        
+        >p{
+            width:50%;
+            height: 150px;
+            overflow-y: auto;
+            
+        }*/
 
         span {font-style: italic; display: block;}
 

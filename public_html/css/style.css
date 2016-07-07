@@ -17,19 +17,34 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-div#home > div {
+nav {
+  background-color: #ce5faa !important;
+}
+div#home h1 {
+  padding-left: 0px;
+  color: lightblue;
+  margin-top: 70px;
+  /* TODO poner al nav*/
+}
+div#home > div#info {
   background-color: rgba(255, 255, 255, 0.8);
   margin-left: auto;
   margin-right: auto;
   border: solid blue 2px;
   padding: 10px;
-  width: 90%;
+  /*        
+        >p{
+            width:50%;
+            height: 150px;
+            overflow-y: auto;
+            
+        }*/
 }
-div#home > div span {
+div#home > div#info span {
   font-style: italic;
   display: block;
 }
-div#home > div img {
+div#home > div#info img {
   border: 1px solid #00428e;
   height: 100px;
   width: 100px;
@@ -37,10 +52,10 @@ div#home > div img {
   border-radius: 100px;
   overflow: hidden;
 }
-div#home > div ol li {
+div#home > div#info ol li {
   color: #660000;
 }
-div#home > div ol li:nth-child(1) > span {
+div#home > div#info ol li:nth-child(1) > span {
   font-weight: 600;
   font-family: Pacifico;
 }
