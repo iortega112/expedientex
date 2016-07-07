@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Elige tu ciudad</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="scripts/weather.js"></script>
     </head>
     <body>
 
         <div id='home'>
 
-            <h1>Titulo</h1>
+            <h1>Tu ciudad</h1>
             <div id='info'>
                 <div><span >TODO</span> write content</div> <!---->
                 <img src='http://4everstatic.com/imagenes/674xX/animales/salvajes/zebras,-arco-iris-166775.jpg'/>
@@ -23,25 +24,33 @@
                     <li><span>Primero</span></li>
                     <li>Segiundo</li>
                 </ol>
-
                 <button class='btn btn-primary' type="button">Action</button>
+
             </div>
         </div>
 
         <script>
+            $(document).ready(function () {
 
-$('div#home p').click(function(){ 
-    $(this).addClass('blink');
-    var that= this;
-    setTimeout(
-          function(){
-                $(that).removeClass('blink');
-              
-          }  , 2000
-                );
-    
-    
-    });
+                $('div#info button').click(
+                        function () {
+                            getWeather();
+                        });
+            });
+
+
+            $('div#home p').click(function () {
+                $(this).addClass('blink');
+                var that = this;
+                setTimeout(
+                        function () {
+                            $(that).removeClass('blink');
+
+                        }, 2000
+                        );
+
+
+            });
 
         </script>
     </body>
