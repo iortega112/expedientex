@@ -63,10 +63,6 @@ div#song {
   background-color: rgba(95, 206, 131, 0.7);
   position: fixed;
   bottom: 0;
-  height: auto;
-  width: 100%;
+  height: 40px;
   text-align: right;
-}
-div#song audio {
-  margin: 10px;
 }

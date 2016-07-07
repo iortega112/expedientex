@@ -53,14 +53,14 @@ nav {background-color: @c1!important;}
 
 
 div#home{
-        h1 {
-           
-            padding-left:0px;
-            color: @a3;
-                margin-top:70px; /* TODO poner al nav*/
-            
-        }
-   
+    h1 {
+
+        padding-left:0px;
+        color: @a3;
+        margin-top:70px; /* TODO poner al nav*/
+
+    }
+
 
     >div#info {
         background-color: rgba(255,255,255, 0.8);
@@ -68,20 +68,20 @@ div#home{
         margin-right: auto;
         border: solid blue 2px;
         padding: 10px;
-        
-        
-        
-    
-        
-       // width: 90%;
 
-/*        
-        >p{
-            width:50%;
-            height: 150px;
-            overflow-y: auto;
-            
-        }*/
+
+
+
+
+        // width: 90%;
+
+        /*        
+                >p{
+                    width:50%;
+                    height: 150px;
+                    overflow-y: auto;
+                    
+                }*/
 
         span {font-style: italic; display: block;}
 
@@ -93,8 +93,8 @@ div#home{
                 color: darken(@important, 30);
                 &:nth-child(1){
                     >span{
-                    font-weight: 600;
-                    font-family: Pacifico;
+                        font-weight: 600;
+                        font-family: Pacifico;
                     }
                 }  
             }  
@@ -105,3 +105,18 @@ div#home{
 
 
 }
+
+
+
+
+div#song{
+    background-color: fadeout(@b1,30%);
+    position: fixed;
+    bottom:0;
+    height:auto;
+    width: 100%;
+    text-align:right;
+    
+ audio {margin:10px;}
+}
+
